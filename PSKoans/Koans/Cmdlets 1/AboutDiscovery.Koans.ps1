@@ -207,6 +207,6 @@ Describe 'Get-Command' {
         $KoanCommands = Get-Command -Module 'PSKoans'
 
         __ | Should -Be $KoanCommands.Count
-        $KoanCommands.Name | Should -Be @('__', '__', '__', '__')
+        $KoanCommands.Name | Should -Be @('Clear-Path', 'Get-Enlightenment', 'Invoke-PSKoans', 'Test-Koans', 'Get-Advice', 'Get-Blank', 'Measure-Karma', 'Register-Advice')
     }
 }
